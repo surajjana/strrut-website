@@ -20,18 +20,20 @@
 		$(function() {
 			$("#btn_start").click(function() {
 			$(this).hide();
-			$("#btn_next_1").show();
-			$("#btn_prev_1").show();
+			
+			/*$("#btn_next_1").show();
+			$("#btn_prev_1").show();*/
+			$("#one_btn").fadeIn("5000");
+		
 			$('#one').toggle('slide', { direction: 'right' }, 500);
 			});
 		});
 
 		$(function() {
 			$("#btn_next_1").click(function() {
-			$(this).hide();
-			$("#btn_next_2").show();
-			$("#btn_prev_2").show();
-			$("#btn_prev_1").hide();
+			$("#one_btn").hide();
+			$("#two_btn").show();
+			
 			$('#one').toggle('slide', { direction: 'left' }, 500);
 			$('#two').toggle('slide', { direction: 'right' }, 500);
 			});
@@ -39,10 +41,11 @@
 
 		$(function() {
 			$("#btn_next_2").click(function() {
-			$(this).hide();
-			$("#btn_next_3").show();
+			$("#two_btn").hide();
+			/*$("#btn_next_3").show();
 			$("#btn_prev_3").show();
-			$("#btn_prev_2").hide();
+			$("#btn_prev_2").hide();*/
+			$("#three_btn").show();
 			$('#two').toggle('slide', { direction: 'left' }, 500);
 			$('#three').toggle('slide', { direction: 'right' }, 500);
 			});
@@ -50,10 +53,11 @@
 
 		$(function() {
 			$("#btn_next_3").click(function() {
-			$(this).hide();
-			$("#btn_next_4").show();
+			$("#three_btn").hide();
+			/*$("#btn_next_4").show();
 			$("#btn_prev_4").show();
-			$("#btn_prev_3").hide();
+			$("#btn_prev_3").hide();*/
+			$("#four_btn").show();
 			$('#three').toggle('slide', { direction: 'left' }, 500);
 			$('#four').toggle('slide', { direction: 'right' }, 500);
 			});
@@ -61,10 +65,11 @@
 
 		$(function() {
 			$("#btn_next_4").click(function() {
-			$(this).hide();
-			$("#btn_next_5").show();
+			$("#four_btn").hide();
+			/*$("#btn_next_5").show();
 			$("#btn_prev_5").show();
-			$("#btn_prev_4").hide();
+			$("#btn_prev_4").hide();*/
+			$("#five_btn").show();
 			$('#four').toggle('slide', { direction: 'left' }, 500);
 			$('#five').toggle('slide', { direction: 'right' }, 500);
 			});
@@ -72,10 +77,12 @@
 
 		$(function() {
 			$("#btn_next_5").click(function() {
-			$(this).hide();
+			$("#five_btn").hide();
+			/*
 			$("#btn_next_6").show();
 			$("#btn_prev_6").show();
-			$("#btn_prev_5").hide();
+			$("#btn_prev_5").hide();*/
+			$("#six_btn").show();
 			$('#five').toggle('slide', { direction: 'left' }, 500);
 			$('#six').toggle('slide', { direction: 'right' }, 500);
 			});
@@ -83,10 +90,11 @@
 
 		$(function() {
 			$("#btn_next_6").click(function() {
-			$(this).hide();
-			$("#btn_next_7").show();
+			$("#six_btn").hide();
+			/*$("#btn_next_7").show();
 			$("#btn_prev_7").show();
-			$("#btn_prev_6").hide();
+			$("#btn_prev_6").hide();*/
+			$("#seven_btn").show();
 			$('#six').toggle('slide', { direction: 'left' }, 500);
 			$('#seven').toggle('slide', { direction: 'right' }, 500);
 			});
@@ -94,10 +102,12 @@
 
 		$(function() {
 			$("#btn_next_7").click(function() {
-			$(this).hide();
+			$("#seven_btn").hide();
+			/*
 			$("#btn_next_8").show();
 			$("#btn_prev_8").show();
-			$("#btn_prev_7").hide();
+			$("#btn_prev_7").hide();*/
+			$("#eight_btn").show();
 			$('#seven').toggle('slide', { direction: 'left' }, 500);
 			$('#eight').toggle('slide', { direction: 'right' }, 500);
 			});
@@ -105,11 +115,12 @@
 
 		$(function() {
 			$("#btn_next_8").click(function() {
-			$(this).hide();
-			$("#btn_submit").show();
+			$("#eight_btn").hide();
+			/*$("#btn_submit").show();
 			$("#btn_prev_9").show();
 			$("#btn_prev_7").hide();
-			$("#btn_prev_8").hide();
+			$("#btn_prev_8").hide();*/
+			$("#nine_btn").show();
 			$('#eight').toggle('slide', { direction: 'left' }, 500);
 			$('#nine').toggle('slide', { direction: 'right' }, 500);
 			});
@@ -122,20 +133,21 @@
 
 		$(function() {
 			$("#btn_prev_1").click(function() {
-			$(this).hide();
+			$("#one_btn").hide();
 			$("#btn_start").show();
-			$("#btn_next_1").hide();
+			
 			$('#one').toggle('slide', { direction: 'right' }, 500);
 			});
 		});
 
 		$(function() {
 			$("#btn_prev_2").click(function() {
-			$(this).hide();
-			$("#btn_next_1").show();
+			$("#two_btn").hide();
+			/*$("#btn_next_1").show();
 			$("#btn_prev_1").show();
 			$("#btn_next_2").hide();
-			$("#btn_prev_2").hide();	
+			$("#btn_prev_2").hide();*/	
+			$("#one_btn").show();
 			$('#one').toggle('slide', { direction: 'left' }, 500);
 			$('#two').toggle('slide', { direction: 'right' }, 500);
 			});
@@ -143,11 +155,12 @@
 
 		$(function() {
 			$("#btn_prev_3").click(function() {
-			$(this).hide();
-			$("#btn_next_2").show();
+			$("#three_btn").hide();
+			/*$("#btn_next_2").show();
 			$("#btn_prev_2").show();
 			$("#btn_next_3").hide();
-			$("#btn_prev_3").hide();	
+			$("#btn_prev_3").hide();*/	
+			$("#two_btn").show();
 			$('#two').toggle('slide', { direction: 'left' }, 500);
 			$('#three').toggle('slide', { direction: 'right' }, 500);
 			});
@@ -155,11 +168,12 @@
 
 		$(function() {
 			$("#btn_prev_4").click(function() {
-			$(this).hide();
-			$("#btn_next_3").show();
+			$("#four_btn").hide();
+			/*$("#btn_next_3").show();
 			$("#btn_prev_3").show();
 			$("#btn_next_4").hide();
-			$("#btn_prev_4").hide();	
+			$("#btn_prev_4").hide();*/	
+			$("#three_btn").show();
 			$('#three').toggle('slide', { direction: 'left' }, 500);
 			$('#four').toggle('slide', { direction: 'right' }, 500);
 			});
@@ -167,11 +181,12 @@
 
 		$(function() {
 			$("#btn_prev_5").click(function() {
-			$(this).hide();
-			$("#btn_next_4").show();
+			$("#five_btn").hide();
+			/*$("#btn_next_4").show();
 			$("#btn_prev_4").show();
 			$("#btn_next_5").hide();
-			$("#btn_prev_5").hide();	
+			$("#btn_prev_5").hide();*/
+			$("#four_btn").show();	
 			$('#four').toggle('slide', { direction: 'left' }, 500);
 			$('#five').toggle('slide', { direction: 'right' }, 500);
 			});
@@ -179,11 +194,12 @@
 
 		$(function() {
 			$("#btn_prev_6").click(function() {
-			$(this).hide();
-			$("#btn_next_5").show();
+			$("#six_btn").hide();
+			/*$("#btn_next_5").show();
 			$("#btn_prev_5").show();
 			$("#btn_next_6").hide();
-			$("#btn_prev_6").hide();	
+			$("#btn_prev_6").hide();*/
+			$("#five_btn").show();	
 			$('#five').toggle('slide', { direction: 'left' }, 500);
 			$('#six').toggle('slide', { direction: 'right' }, 500);
 			});
@@ -191,11 +207,12 @@
 
 		$(function() {
 			$("#btn_prev_7").click(function() {
-			$(this).hide();
-			$("#btn_next_6").show();
+			$("#seven_btn").hide();
+			/*$("#btn_next_6").show();
 			$("#btn_prev_6").show();
 			$("#btn_next_7").hide();
-			$("#btn_prev_7").hide();	
+			$("#btn_prev_7").hide();*/
+			$("#six_btn").show();	
 			$('#six').toggle('slide', { direction: 'left' }, 500);
 			$('#seven').toggle('slide', { direction: 'right' }, 500);
 			});
@@ -203,11 +220,12 @@
 
 		$(function() {
 			$("#btn_prev_8").click(function() {
-			$(this).hide();
-			$("#btn_next_7").show();
+			$("#eight_btn").hide();
+			/*$("#btn_next_7").show();
 			$("#btn_prev_7").show();
 			$("#btn_next_8").hide();
-			$("#btn_prev_8").hide();	
+			$("#btn_prev_8").hide();*/
+			$("#seven_btn").show();	
 			$('#seven').toggle('slide', { direction: 'left' }, 500);
 			$('#eight').toggle('slide', { direction: 'right' }, 500);
 			});
@@ -215,11 +233,12 @@
 
 		$(function() {
 			$("#btn_prev_9").click(function() {
-			$(this).hide();
-			$("#btn_next_8").show();
+			$("#nine_btn").hide();
+			/*$("#btn_next_8").show();
 			$("#btn_prev_8").show();
 			$("#btn_submit").hide();
-			$("#btn_prev_9").hide();	
+			$("#btn_prev_9").hide();*/
+			$("#eight_btn").show();	
 			$('#eight').toggle('slide', { direction: 'left' }, 500);
 			$('#nine').toggle('slide', { direction: 'right' }, 500);
 			});
@@ -251,9 +270,10 @@
 	</div>
 </div>
 
-<input type="button" id="btn_prev_1" value="Prev" style="display:none" />
-<input type="button" id="btn_next_1" value="Next" style="display:none" />
-
+<div id="one_btn" style="display:none">
+	<input type="button" id="btn_prev_1" value="Prev" />
+	<input type="button" id="btn_next_1" value="Next" />
+</div>
 
 <div id="slidediv1" style="display: none;">
 	<div>
@@ -275,9 +295,10 @@
 	</div>
 </div>
 
-<input type="button" id="btn_prev_2" value="Prev" style="display:none" />
-<input type="button" id="btn_next_2" value="Next" style="display:none" />
-
+<div id="two_btn" style="display:none">
+<input type="button" id="btn_prev_2" value="Prev" />
+<input type="button" id="btn_next_2" value="Next" />
+</div>
 
 <div id="three" style="display: none;">
 	<center><h1></h1></center>
@@ -288,9 +309,10 @@
 	</div>
 </div>
 
-<input type="button" id="btn_prev_3" value="Prev" style="display:none" />
-<input type="button" id="btn_next_3" value="Next" style="display:none" />
-
+<div id="three_btn" style="display:none">
+<input type="button" id="btn_prev_3" value="Prev" />
+<input type="button" id="btn_next_3" value="Next"  />
+</div>
 
 <div id="four" style="display: none;">
 	<center><h1></h1></center>
@@ -301,9 +323,10 @@
 	</div>
 </div>
 
-<input type="button" id="btn_prev_4" value="Prev" style="display:none" />
-<input type="button" id="btn_next_4" value="Next" style="display:none" />
-
+<div id="four_btn" style="display:none">
+<input type="button" id="btn_prev_4" value="Prev"  />
+<input type="button" id="btn_next_4" value="Next" />
+</div>
 
 <div id="five" style="display: none;">
 	<center><h1></h1></center>
@@ -314,9 +337,10 @@
 	</div>
 </div>
 
-<input type="button" id="btn_prev_5" value="Prev" style="display:none" />
-<input type="button" id="btn_next_5" value="Next" style="display:none" />
-
+<div id="five_btn" style="display:none">
+<input type="button" id="btn_prev_5" value="Prev" />
+<input type="button" id="btn_next_5" value="Next"  />
+</div>
 
 <div id="six" style="display: none;">
 	<center><h1></h1></center>
@@ -327,9 +351,10 @@
 	</div>
 </div>
 
-<input type="button" id="btn_prev_6" value="Prev" style="display:none" />
-<input type="button" id="btn_next_6" value="Next" style="display:none" />
-
+<div id="six_btn" style="display:none">
+<input type="button" id="btn_prev_6" value="Prev"  />
+<input type="button" id="btn_next_6" value="Next" />
+</div>
 
 <div id="seven" style="display: none;">
 	<center><h1></h1></center>
@@ -340,9 +365,10 @@
 	</div>
 </div>
 
-<input type="button" id="btn_prev_7" value="Prev" style="display:none" />
-<input type="button" id="btn_next_7" value="Next" style="display:none" />
-
+<div id="seven_btn" style="display:none">
+<input type="button" id="btn_prev_7" value="Prev" />
+<input type="button" id="btn_next_7" value="Next"  />
+</div>
 
 <div id="eight" style="display: none;">
 	<center><h1></h1></center>
@@ -353,9 +379,10 @@
 	</div>
 </div>
 
-<input type="button" id="btn_prev_8" value="Prev" style="display:none" />
-<input type="button" id="btn_next_8" value="Next" style="display:none" />
-
+<div id="eight_btn" style="display:none">
+<input type="button" id="btn_prev_8" value="Prev" />
+<input type="button" id="btn_next_8" value="Next"  />
+</div>
 
 
 <div id="nine" style="display: none;">
@@ -367,9 +394,10 @@
 	</div>
 </div>
 
-<input type="button" id="btn_prev_9" value="Prev" style="display:none" />
-<input type="button" id="btn_submit" value="Submit" style="display:none" />
-
+<div id="nine_btn" style="display:none">
+<input type="button" id="btn_prev_9" value="Prev"  />
+<input type="button" id="btn_submit" value="Submit"  />
+</div>
 
 
 </div>
