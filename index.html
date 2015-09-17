@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Strrut | Home</title>
+
+	<meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+</head>
+<body class="bg-img">
+<center><h1>Strrut</h1></center>
+<br /><br />
+	<div class="one" id="one">
+	<center><h1>Who you are?</h1></center>
+	<br	/>
+	<center><a href="#" onclick="next_click();">Next</a></center>
+	</div>
+	<div class="two" id="two" style="display: none;">
+	<center><h1>Your location?</h1></center>
+	</div>
+	<div class="three" style="display: none;">
+	<center><h1>Your PAN?</h1></center>
+	</div>
+
+	<script type="text/javascript">
+
+	function next_click(){
+		document.getElementById('one').style.display = 'none';
+		
+		$('#two').slideToggle(1000);
+
+		document.getElementById('two').style.display = 'block';
+	}
+
+	</script>
+
+
+</body>
+</html>
