@@ -16,17 +16,229 @@
 	<script type="text/javascript" src="http://code.jquery.com/ui/1.10.3/jquery-ui.js"></script>
 
 	<script type="text/javascript">
+		
 		$(function() {
-			$("#btn_next").click(function() {
+			$("#btn_start").click(function() {
+			$(this).hide();
+			$("#btn_next_1").show();
+			$("#btn_prev_1").show();
 			$('#one').toggle('slide', { direction: 'right' }, 500);
 			});
 		});
+
+		$(function() {
+			$("#btn_next_1").click(function() {
+			$(this).hide();
+			$("#btn_next_2").show();
+			$("#btn_prev_2").show();
+			$("#btn_prev_1").hide();
+			$('#one').toggle('slide', { direction: 'left' }, 500);
+			$('#two').toggle('slide', { direction: 'right' }, 500);
+			});
+		});
+
+		$(function() {
+			$("#btn_next_2").click(function() {
+			$(this).hide();
+			$("#btn_next_3").show();
+			$("#btn_prev_3").show();
+			$("#btn_prev_2").hide();
+			$('#two').toggle('slide', { direction: 'left' }, 500);
+			$('#three').toggle('slide', { direction: 'right' }, 500);
+			});
+		});
+
+		$(function() {
+			$("#btn_next_3").click(function() {
+			$(this).hide();
+			$("#btn_next_4").show();
+			$("#btn_prev_4").show();
+			$("#btn_prev_3").hide();
+			$('#three').toggle('slide', { direction: 'left' }, 500);
+			$('#four').toggle('slide', { direction: 'right' }, 500);
+			});
+		});
+
+		$(function() {
+			$("#btn_next_4").click(function() {
+			$(this).hide();
+			$("#btn_next_5").show();
+			$("#btn_prev_5").show();
+			$("#btn_prev_4").hide();
+			$('#four').toggle('slide', { direction: 'left' }, 500);
+			$('#five').toggle('slide', { direction: 'right' }, 500);
+			});
+		});
+
+		$(function() {
+			$("#btn_next_5").click(function() {
+			$(this).hide();
+			$("#btn_next_6").show();
+			$("#btn_prev_6").show();
+			$("#btn_prev_5").hide();
+			$('#five').toggle('slide', { direction: 'left' }, 500);
+			$('#six').toggle('slide', { direction: 'right' }, 500);
+			});
+		});
+
+		$(function() {
+			$("#btn_next_6").click(function() {
+			$(this).hide();
+			$("#btn_next_7").show();
+			$("#btn_prev_7").show();
+			$("#btn_prev_6").hide();
+			$('#six').toggle('slide', { direction: 'left' }, 500);
+			$('#seven').toggle('slide', { direction: 'right' }, 500);
+			});
+		});
+
+		$(function() {
+			$("#btn_next_7").click(function() {
+			$(this).hide();
+			$("#btn_next_8").show();
+			$("#btn_prev_8").show();
+			$("#btn_prev_7").hide();
+			$('#seven').toggle('slide', { direction: 'left' }, 500);
+			$('#eight').toggle('slide', { direction: 'right' }, 500);
+			});
+		});
+
+		$(function() {
+			$("#btn_next_8").click(function() {
+			$(this).hide();
+			$("#btn_submit").show();
+			$("#btn_prev_9").show();
+			$("#btn_prev_7").hide();
+			$("#btn_prev_8").hide();
+			$('#eight').toggle('slide', { direction: 'left' }, 500);
+			$('#nine').toggle('slide', { direction: 'right' }, 500);
+			});
+		});
+	
+	</script>
+
+
+	<script type="text/javascript">
+
+		$(function() {
+			$("#btn_prev_1").click(function() {
+			$(this).hide();
+			$("#btn_start").show();
+			$("#btn_next_1").hide();
+			$('#one').toggle('slide', { direction: 'right' }, 500);
+			});
+		});
+
+		$(function() {
+			$("#btn_prev_2").click(function() {
+			$(this).hide();
+			$("#btn_next_1").show();
+			$("#btn_prev_1").show();
+			$("#btn_next_2").hide();
+			$("#btn_prev_2").hide();	
+			$('#one').toggle('slide', { direction: 'left' }, 500);
+			$('#two').toggle('slide', { direction: 'right' }, 500);
+			});
+		});
+
+		$(function() {
+			$("#btn_prev_3").click(function() {
+			$(this).hide();
+			$("#btn_next_2").show();
+			$("#btn_prev_2").show();
+			$("#btn_next_3").hide();
+			$("#btn_prev_3").hide();	
+			$('#two').toggle('slide', { direction: 'left' }, 500);
+			$('#three').toggle('slide', { direction: 'right' }, 500);
+			});
+		});
+
+		$(function() {
+			$("#btn_prev_4").click(function() {
+			$(this).hide();
+			$("#btn_next_3").show();
+			$("#btn_prev_3").show();
+			$("#btn_next_4").hide();
+			$("#btn_prev_4").hide();	
+			$('#three').toggle('slide', { direction: 'left' }, 500);
+			$('#four').toggle('slide', { direction: 'right' }, 500);
+			});
+		});
+
+		$(function() {
+			$("#btn_prev_5").click(function() {
+			$(this).hide();
+			$("#btn_next_4").show();
+			$("#btn_prev_4").show();
+			$("#btn_next_5").hide();
+			$("#btn_prev_5").hide();	
+			$('#four').toggle('slide', { direction: 'left' }, 500);
+			$('#five').toggle('slide', { direction: 'right' }, 500);
+			});
+		});
+
+		$(function() {
+			$("#btn_prev_6").click(function() {
+			$(this).hide();
+			$("#btn_next_5").show();
+			$("#btn_prev_5").show();
+			$("#btn_next_6").hide();
+			$("#btn_prev_6").hide();	
+			$('#five').toggle('slide', { direction: 'left' }, 500);
+			$('#six').toggle('slide', { direction: 'right' }, 500);
+			});
+		});
+
+		$(function() {
+			$("#btn_prev_7").click(function() {
+			$(this).hide();
+			$("#btn_next_6").show();
+			$("#btn_prev_6").show();
+			$("#btn_next_7").hide();
+			$("#btn_prev_7").hide();	
+			$('#six').toggle('slide', { direction: 'left' }, 500);
+			$('#seven').toggle('slide', { direction: 'right' }, 500);
+			});
+		});
+
+		$(function() {
+			$("#btn_prev_8").click(function() {
+			$(this).hide();
+			$("#btn_next_7").show();
+			$("#btn_prev_7").show();
+			$("#btn_next_8").hide();
+			$("#btn_prev_8").hide();	
+			$('#seven').toggle('slide', { direction: 'left' }, 500);
+			$('#eight').toggle('slide', { direction: 'right' }, 500);
+			});
+		});
+
+		$(function() {
+			$("#btn_prev_9").click(function() {
+			$(this).hide();
+			$("#btn_next_8").show();
+			$("#btn_prev_8").show();
+			$("#btn_submit").hide();
+			$("#btn_prev_9").hide();	
+			$('#eight').toggle('slide', { direction: 'left' }, 500);
+			$('#nine').toggle('slide', { direction: 'right' }, 500);
+			});
+		});
+
 	</script>
 </head>
 <body class="bg-img">
 
+<nav class="navbar">
+ <div class="container-fluid">
+    <a class="navbar-brand" href="#">Brand</a>
+ </div>
+</nav>
 
 <center><h1>Strrut</h1></center>
+
+<input type="button" id="btn_start" value="Start" />
+
 
 <div id="one" style="display: none;">
 	<center><h1>Who you are?</h1></center>
@@ -37,6 +249,8 @@
 	</div>
 </div>
 
+<input type="button" id="btn_prev_1" value="Prev" style="display:none" />
+<input type="button" id="btn_next_1" value="Next" style="display:none" />
 
 
 <div id="slidediv1" style="display: none;">
@@ -46,7 +260,116 @@
 	</div>
 </div>
 <br />
-<input type="button" id="btn_next" value="Next" />
+
+
+<div id="two" style="display: none;">
+
+
+	<center><h1></h1></center>
+	<br /><br />
+	<div class="row">
+		<div class="col-md-12"><center><h3>Place of Bussiness</h3></center></div>
+		
+	</div>
+</div>
+
+<input type="button" id="btn_prev_2" value="Prev" style="display:none" />
+<input type="button" id="btn_next_2" value="Next" style="display:none" />
+
+
+<div id="three" style="display: none;">
+	<center><h1></h1></center>
+	<br /><br />
+	<div class="row">
+		<div class="col-md-12"><center><h3>ABC</h3></center></div>
+		
+	</div>
+</div>
+
+<input type="button" id="btn_prev_3" value="Prev" style="display:none" />
+<input type="button" id="btn_next_3" value="Next" style="display:none" />
+
+
+<div id="four" style="display: none;">
+	<center><h1></h1></center>
+	<br /><br />
+	<div class="row">
+		<div class="col-md-12"><center><h3>DEF</h3></center></div>
+		
+	</div>
+</div>
+
+<input type="button" id="btn_prev_4" value="Prev" style="display:none" />
+<input type="button" id="btn_next_4" value="Next" style="display:none" />
+
+
+<div id="five" style="display: none;">
+	<center><h1></h1></center>
+	<br /><br />
+	<div class="row">
+		<div class="col-md-12"><center><h3>GHI</h3></center></div>
+		
+	</div>
+</div>
+
+<input type="button" id="btn_prev_5" value="Prev" style="display:none" />
+<input type="button" id="btn_next_5" value="Next" style="display:none" />
+
+
+<div id="six" style="display: none;">
+	<center><h1></h1></center>
+	<br /><br />
+	<div class="row">
+		<div class="col-md-12"><center><h3>JKL</h3></center></div>
+		
+	</div>
+</div>
+
+<input type="button" id="btn_prev_6" value="Prev" style="display:none" />
+<input type="button" id="btn_next_6" value="Next" style="display:none" />
+
+
+<div id="seven" style="display: none;">
+	<center><h1></h1></center>
+	<br /><br />
+	<div class="row">
+		<div class="col-md-12"><center><h3>MNO</h3></center></div>
+		
+	</div>
+</div>
+
+<input type="button" id="btn_prev_7" value="Prev" style="display:none" />
+<input type="button" id="btn_next_7" value="Next" style="display:none" />
+
+
+<div id="eight" style="display: none;">
+	<center><h1></h1></center>
+	<br /><br />
+	<div class="row">
+		<div class="col-md-12"><center><h3>PQR</h3></center></div>
+		
+	</div>
+</div>
+
+<input type="button" id="btn_prev_8" value="Prev" style="display:none" />
+<input type="button" id="btn_next_8" value="Next" style="display:none" />
+
+
+
+<div id="nine" style="display: none;">
+	<center><h1></h1></center>
+	<br /><br />
+	<div class="row">
+		<div class="col-md-12"><center><h3>STU</h3></center></div>
+		
+	</div>
+</div>
+
+<input type="button" id="btn_prev_9" value="Prev" style="display:none" />
+<input type="button" id="btn_submit" value="Submit" style="display:none" />
+
+
+
 
 
 </body>
