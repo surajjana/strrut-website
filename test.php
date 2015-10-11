@@ -182,6 +182,7 @@
 </head>
 <body>
 	<center><h1>BStrrut</h1></center>
+	<center><h6>Dont panic! Organise</h6></center>
 	<br />
 	<br />
 	<br />
