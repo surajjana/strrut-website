@@ -43,6 +43,7 @@
 			});
 
 			$("#btn2").on('click',function(){
+				count = count - 1;
 				$("#id2").fadeOut(fadeTime, function() {
 				  $("id2").css("display", "none");
 				  $("id1").css("display", "block");	
@@ -59,6 +60,7 @@
 			});
 
 			$("#btn4").on('click',function(){
+				count = count - 1;
 				$("#id3").fadeOut(fadeTime, function() {
 				  $("id3").css("display", "none");
 				  $("id2").css("display", "block");	
@@ -79,6 +81,7 @@
 			});
 
 			$("#btn6").on('click',function(){
+				count = count - 1;
 				$("#id4").fadeOut(fadeTime, function() {
 				  $("id4").css("display", "none");
 				  $("id3").css("display", "block");	
@@ -95,6 +98,7 @@
 			});
 
 			$("#btn8").on('click',function(){
+				count = count - 1;
 				$("#id5").fadeOut(fadeTime, function() {
 				  $("id5").css("display", "none");
 				  $("id4").css("display", "block");	
@@ -111,6 +115,7 @@
 			});
 
 			$("#btn10").on('click',function(){
+				count = count - 1;
 				$("#id6").fadeOut(fadeTime, function() {
 				  $("id6").css("display", "none");
 				  $("id5").css("display", "block");	
@@ -127,6 +132,7 @@
 			});
 
 			$("#btn12").on('click',function(){
+				count = count - 1;
 				$("#id7").fadeOut(fadeTime, function() {
 				  $("id7").css("display", "none");
 				  $("id6").css("display", "block");	
@@ -143,6 +149,7 @@
 			});
 
 			$("#btn14").on('click',function(){
+				count = count - 1;
 				$("#id8").fadeOut(fadeTime, function() {
 				  $("id8").css("display", "none");
 				  $("id7").css("display", "block");	
@@ -213,6 +220,24 @@
 
 			        case 40: // down
 			        	console.log("Down Arrow!!");
+			        break;
+
+			        case 13 : //enter key
+			        {
+			        	console.log(count);
+			        	if(count == 8)
+			        		break;
+			        	else
+			        	{	
+				        	new_c = count + 1;
+							$("#id"+count).fadeOut(fadeTime, function() {
+							  $("id"+count).css("display", "none");
+							  $("id"+new_c).css("display", "block");	
+							  $("#id"+new_c).fadeIn(fadeTime);
+							});
+							count = count + 1;
+						}
+					}
 			        break;
 
 			        default: return; // exit this handler for other keys
