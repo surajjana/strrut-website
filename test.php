@@ -170,7 +170,6 @@
 
 			/* Data transmission */
 			$("#btn15").on('click',function(){
-				console.log("Submit cliced!!");
 				var url = "http://localhost/strrut/test_post.php?wur="+wur+"&nob"+nob;
 				console.log(url);
 				$(location).attr('href',url);
@@ -218,6 +217,7 @@
 		<br />
 		<!--<input type="text" id="nob" placeholder="Nature Of Business" />-->
 		<select id="nob" name="nob">
+			<option>Not Selected</option>
 			<option value="trading">Trading</option>
 			<option value="manufacturing">Manufacturing</option>
 			<option value="service">Service</option>
@@ -244,7 +244,17 @@
 	<center><div id="id5" style="display: none;">
 		<h1>What do you want to call yourself?</h1>
 		<br />
-		<input type="text" id="btype" placeholder="Business Type" />
+		<!--<input type="text" id="btype" placeholder="Business Type" />-->
+
+		<select id="btype" name="btype">
+			<option>Not Selected</option>
+			<option>Sole Proprietor</option>
+			<option>HUF</option>
+			<option>Company</option>
+			<option>A partnership firm</option>
+			<option>Association of people</option>
+			<option>Not for profit organisation</option>
+		</select>
 		<br />
 		<br />
 		<center>
@@ -255,7 +265,15 @@
 	<center><div id="id6" style="display: none;">
 		<h1>What are the number of persons sharing the risk and reward of your business?</h1>
 		<br />
-		<input type="text" id="stkhldrs" placeholder="No. Of Stakeholders" />
+		<!--<input type="text" id="stkhldrs" placeholder="No. Of Stakeholders" />-->
+		<select id="stkhldrs" name="stkhldrs">
+			<option>Not Selected</option>
+			<option>Solo</option>
+			<option>2 to 10</option>
+			<option>10 to 20</option>
+			<option>20 to 50</option>
+			<option>&gt50</option>
+		</select>
 		<br />
 		<br />
 		<center>
@@ -266,7 +284,17 @@
 	<center><div id="id7" style="display: none;">
 		<h1>What is your approximate annual turnover?</h1>
 		<br />
-		<input type="text" id="trnovr" placeholder="Expected Turnover" />
+		<!--<input type="text" id="trnovr" placeholder="Expected Turnover" />-->
+		<select id="trnovr" name="trnovr">
+			<option>Not Selected</option>
+			<option>&lt7.5</option>
+			<option>7.5 to 25</option>
+			<option>25 to 100</option>
+			<option>100 to 500</option>
+			<option>500 to 2000</option>
+			<option>2000 to 10000</option>
+			<option>&gt10000</option>
+		</select>
 		<br />
 		<br />
 		<center>
@@ -277,7 +305,14 @@
 	<center><div id="id8" style="display: none;">
 		<h1>What are the maximum number of employees you have or may have anytime during the current financial year?</h1>
 		<br />
-		<input type="text" id="noe" placeholder="No. of employees" />
+		<!--<input type="text" id="noe" placeholder="No. of employees" />-->
+		<select id="noe" name="noe">
+			<option>Not Selected</option>
+			<option>0 to 9</option>
+			<option>9 to 30</option>
+			<option>30 to 200</option>
+			<option>&gt200</option>
+		</select>
 		<br />
 		<br />
 		<center>
