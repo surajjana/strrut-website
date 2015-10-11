@@ -25,6 +25,8 @@
 
 			var fadeTime = 500;
 
+			var count = 1, new_c = 0;
+
 			var wur, pob, nob, pan, btype, stkhldrs, trnovr,noe;
 
 			/* ======================================================================= */
@@ -186,6 +188,11 @@
 			    switch(e.which) {
 			        case 37: // left
 			        	console.log("Left Arrow!!");
+			        	$("#id"+new_c).fadeOut(fadeTime, function() {
+						  $("id"+new_c).css("display", "none");
+						  $("id"+count).css("display", "block");	
+						  $("#id"+count).fadeIn(fadeTime);
+						});
 			        break;
 
 			        case 38: // up
@@ -193,7 +200,15 @@
 			        break;
 
 			        case 39: // right
+			        {
 			        	console.log("Right Arrow!!");
+			        	new_c = count + 1;
+						$("#id"+count).fadeOut(fadeTime, function() {
+						  $("id"+count).css("display", "none");
+						  $("id"+new_c).css("display", "block");	
+						  $("#id"+new_c).fadeIn(fadeTime);
+						});
+					}
 			        break;
 
 			        case 40: // down
