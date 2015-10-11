@@ -19,11 +19,16 @@
 	<script type="text/javascript">
 		$(document).ready(function(){
 
+			/* ======================================================================= */
+
 			/* Variables */
 
 			var fadeTime = 500;
 
 			var wur, pob, nob, pan, btype, stkhldrs, trnovr,noe;
+
+			/* ======================================================================= */
+
 
 			/* Button event handelers */
 
@@ -173,6 +178,31 @@
 				var url = "http://localhost/strrut/test_post.php?wur="+wur+"&nob"+nob;
 				console.log(url);
 				$(location).attr('href',url);
+			});
+
+			/* ======================================================================= */
+
+			$(document).keydown(function(e) {
+			    switch(e.which) {
+			        case 37: // left
+			        	console.log("Left Arrow!!");
+			        break;
+
+			        case 38: // up
+			        	console.log("Up Arrow!!");
+			        break;
+
+			        case 39: // right
+			        	console.log("Right Arrow!!");
+			        break;
+
+			        case 40: // down
+			        	console.log("Down Arrow!!");
+			        break;
+
+			        default: return; // exit this handler for other keys
+			    }
+			    e.preventDefault(); // prevent the default action (scroll / move caret)
 			});
 
 		});
