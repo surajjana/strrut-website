@@ -7,11 +7,11 @@
 	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
 
 	<link rel="stylesheet" type="text/css" href="css/main.css">
-	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+	<!--<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
 
 
 	
-	<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+	<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>-->
 	
 	<script type="text/javascript" src="js/jquery-min.js"></script>
 	<!--<script type="text/javascript" src="http://code.jquery.com/ui/1.10.3/jquery-ui.js"></script>-->
@@ -184,7 +184,7 @@
 
 			/* Data transmission */
 			$("#btn15").on('click',function(){
-				var url = "http://localhost/strrut/test_post.php?wur="+wur+"&nob"+nob;
+				var url = "http://localhost/strrut/test_post.php?wur="+wur+"&nob="+nob;
 				console.log(url);
 				$(location).attr('href',url);
 			});
