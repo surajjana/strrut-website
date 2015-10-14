@@ -270,7 +270,7 @@
 		</center>
 	</div></center>
 	<center><div id="id2" style="display: none;">
-		<h1>Place of business</h1>
+		<h1>Place of business?</h1>
 		<br />
 		<input type="text" id="addr" placeholder="Address" />
 		<br />
